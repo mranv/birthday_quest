@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest #2</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .progress-bar {
+            width: 100%;
+            max-width: 500px;
+            height: 30px;
+            background-color: #f3f3f3;
+            position: relative;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+        }
+
+        .progress-bar-inner {
+            height: 100%;
+            width: 0;
+            position: absolute;
+            background-color: #4CAF50;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+        }
+
+        .white-container {
+            background-color: white;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+        }
+    </style>
+    <script defer src="quest2.js"></script>
+</head>
+<body>
+    <h1>Quest #2</h1>
+    <p>Test your knowledge of FC Barcelona with our QA game. Type in your answer and learn more about the club! You need to answer them all to pass to the next level.</p>
+    <div class="progress-bar">
+        <div class="progress-bar-inner" id="progressBar">0%</div>
+    </div>
+    <div id="game">
+        <div id="questionContainer" class="white-container"></div>
+        <div class="white-container">
+            <input type="text" id="answerInput" />
+            <button id="submitBtn">Submit</button>
+        </div>
+    </div>
+    <p id="feedback" style="display: none; font-size: 2rem;"></p>
+</body>
+</html>
