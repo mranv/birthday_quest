@@ -1,62 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quest #1</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <style>
-    .container {
+      .container {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         margin: 2rem 0;
-    }
+      }
 
-    #canvas {
-        border: 1px solid #4B0082;
+      #canvas {
+        border: 1px solid #4b0082;
         background-color: white; /* Add this line to set the canvas background color to white */
-    }
+      }
 
-    .image-container {
-        width: 50%;
-    }
+      .image-container {
+        width: 400px;
+        height: 400px;
+      }
 
-    img {
+      img {
         width: 100%;
         height: auto;
-    }
+      }
 
-    #submitBtn {
+      #submitBtn {
         display: none;
-    }
+      }
 
-    #loadingIcon {
+      #loadingIcon {
         display: none;
-    }
+      }
 
-    #result {
+      #result {
         display: none;
         color: red;
         font-weight: bold;
-    }
-</style>
+      }
+    </style>
     <script defer src="quest1.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Quest #1</h1>
     <p>Paint yourself</p>
-    In this quest you have to try to paint yourself as similar to the image as you can. Please note that you will not pass the quest till the image will be similar enough!
+    In this quest you have to try to paint yourself as similar to the image as
+    you can. Please note that you will not pass the quest till the image will be
+    similar enough!
     <div class="container">
-        <canvas id="canvas" width="400" height="400"></canvas>
-        <div class="image-container">
-            <img id="referenceImage" src="albert.jpg" alt="Reference image">
-        </div>
+      <canvas id="canvas" width="400" height="400"></canvas>
+      <div class="image-container">
+        <img id="referenceImage" src="albert.jpg" alt="Reference image" />
+      </div>
     </div>
     <button id="submitBtn">Submit</button>
     <div id="loadingIcon">Loading...</div>
     <p id="result"></p>
     <script>
-        document.getElementById('referenceImage').src = 'albert.jpg';
+      document.getElementById("referenceImage").src = "albert.jpg";
     </script>
-</body>
+  </body>
 </html>
