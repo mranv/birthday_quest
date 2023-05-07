@@ -1,18 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quest #5</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      #questionContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: max-content;
+        margin: auto;
+      }
+
+      #questionContainer > div {
+        width: 100%;
+      }
+
+      #questionContainer > div > p {
+        text-align: left;
+      }
+
+      #questionContainer > div > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 100px;
+      }
+      .submit-button {
+        margin: 20px 0 50px;
+      }
+    </style>
+  </head>
+  <body>
     <h1>Quest #5</h1>
     <p>Now let us check your knowledge of "The Office"</p>
     <form id="quizForm">
-        <div id="questionContainer"></div>
-        <button type="submit">Submit</button>
+      <div id="questionContainer"></div>
+      <button type="submit" class="submit-button">Submit</button>
     </form>
     <script src="quest5.js"></script>
-</body>
+  </body>
 </html>

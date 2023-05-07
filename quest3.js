@@ -41,7 +41,9 @@ voice1.addTickables(chords1);
 const voice3 = new VF.Voice({ num_beats: 4, beat_value: 4 });
 voice3.addTickables(chords3);
 
-const formatter = new VF.Formatter().joinVoices([voice1, voice3]).format([voice1, voice3], 350);
+const formatter = new VF.Formatter()
+  .joinVoices([voice1, voice3])
+  .format([voice1, voice3], 350);
 
 voice1.draw(context, stave1);
 voice3.draw(context, stave3);
@@ -52,7 +54,9 @@ const submitBtn = document.getElementById("submitBtn");
 const feedback = document.getElementById("feedback");
 
 submitBtn.addEventListener("click", () => {
-  let answers = inputIds.map(id => document.getElementById(id).value.trim().toUpperCase());
+  let answers = inputIds.map((id) =>
+    document.getElementById(id).value.trim().toUpperCase()
+  );
   console.log("Correct Answers:", correctAnswers);
   console.log("User Answers:", answers);
   if (JSON.stringify(answers) === JSON.stringify(correctAnswers)) {
@@ -61,15 +65,14 @@ submitBtn.addEventListener("click", () => {
     feedback.style.display = "block";
     setTimeout(() => {
       window.location.href = "quest4.html";
-    }, 4000);
+    }, 2000);
   } else {
     feedback.innerHTML = "TRY AGAIN";
     feedback.style.color = "red";
     feedback.style.display = "block";
     setTimeout(() => {
       feedback.style.display = "none";
-      inputIds.forEach(id => (document.getElementById(id).value = ""));
-    }, 4000);
+      inputIds.forEach((id) => (document.getElementById(id).value = ""));
+    }, 2000);
   }
 });
-
