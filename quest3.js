@@ -2,7 +2,7 @@ const VF = Vex.Flow;
 const div = document.getElementById("musicNotation");
 const renderer = new VF.Renderer(div, VF.Renderer.Backends.SVG);
 
-renderer.resize(800, 500);
+renderer.resize(400, 300);
 const context = renderer.getContext();
 
 const stave1 = new VF.Stave(10, 50, 400);
@@ -20,13 +20,10 @@ const chords1 = [
   new VF.StaveNote({ keys: ["c/4", "e/4", "g/4"], duration: "q" }),
 ];
 
-
 const voice1 = new VF.Voice({ num_beats: 4, beat_value: 4 });
 voice1.addTickables(chords1);
 
-const formatter = new VF.Formatter()
-  .joinVoices([voice1])
-  .format([voice1], 350);
+const formatter = new VF.Formatter().joinVoices([voice1]).format([voice1], 350);
 
 voice1.draw(context, stave1);
 
@@ -39,8 +36,6 @@ submitBtn.addEventListener("click", () => {
   let answers = inputIds.map((id) =>
     document.getElementById(id).value.trim().toUpperCase()
   );
-  console.log("Correct Answers:", correctAnswers);
-  console.log("User Answers:", answers);
   if (JSON.stringify(answers) === JSON.stringify(correctAnswers)) {
     feedback.innerHTML = "CORRECT";
     feedback.style.color = "green";
