@@ -26,10 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       question: "Who did FC Barcelona play against in their first ever match?",
-      answer: "british railway workers",
+      answer: "english colony",
     },
     { question: "And was was the score?", answer: "1-0" },
-    { question: "How many football clubs are in Barcelona?", answer: "2" },
+    { question: "How many professional football clubs are in Barcelona?", answer: "2" },
     { question: "Who is the best fun of Barça?", answer: "albert punti" },
   ];
 
