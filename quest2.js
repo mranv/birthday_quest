@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       question:
         "Who scored FC Barcelona's first ever official goal? (full name)",
-      answer: "walter wild",
+      answer: "george givan",
     },
     {
       question:
