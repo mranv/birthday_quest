@@ -19,10 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
         clickCount++;
 
         if (clickCount === 3) {
-            clickMessage.textContent = "Albert, try again slower!";
+            clickMessage.textContent = "prakriti, try again slower!";
             clickMessage.hidden = false;
         } else if (clickCount === 5) {
-            clickMessage.textContent = "Albert! Try softer please...";
+            clickMessage.textContent = "prakriti! Try softer please...";
         } else if (clickCount === 7) {
             loadingIcon.style.display = "block";
             redirectToQuestPage();

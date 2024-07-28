@@ -63,8 +63,8 @@ const questions = [
   },
   {
     question: "Who is the biggest fan of 'The Office'?",
-    choices: ["Tania", "Dima", "Albert", "Steve Carell"],
-    answer: "Albert",
+    choices: ["Tania", "Dima", "prakriti", "Steve Carell"],
+    answer: "prakriti",
   },
 ];
 

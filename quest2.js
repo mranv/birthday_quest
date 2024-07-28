@@ -1,36 +1,33 @@
 document.addEventListener("DOMContentLoaded", function () {
   const questions = [
     {
-      question: "Who is the all-time top scorer for FC Barcelona? (full name)",
-      answer: "lionel messi",
+      question: "Who is the all-time top scorer for Real Madrid? (full name)",
+      answer: "cristiano ronaldo",
     },
-    { question: "In which year was FC Barcelona founded?", answer: "1899" },
+    { question: "In which year was Real Madrid founded?", answer: "1902" },
     {
-      question: "What was the name of FC Barcelona's first stadium?",
-      answer: "camp de la indústria",
-    },
-    {
-      question:
-        "Who scored FC Barcelona's first ever official goal? (full name)",
-      answer: "george givan",
+      question: "What was the name of Real Madrid's first stadium?",
+      answer: "campo de o'donnell",
     },
     {
-      question:
-        "How many Copa del Rey titles has FC Barcelona won, making it a record holder in this competition?",
-      answer: "31",
+      question: "Who was Real Madrid's first president? (full name)",
+      answer: "juan padrós rubió",
     },
     {
-      question:
-        'In what year did FC Barcelona first wear its famous "blaugrana" striped kit?',
-      answer: "1900",
+      question: "How many UEFA Champions League/European Cup titles has Real Madrid won?",
+      answer: "14",
     },
     {
-      question: "Who did FC Barcelona play against in their first ever match?",
-      answer: "english colony",
+      question: "In what year did Real Madrid first wear its famous all-white kit?",
+      answer: "1902",
     },
-    { question: "And was was the score?", answer: "1-0" },
-    { question: "How many professional football clubs are in Barcelona?", answer: "2" },
-    { question: "Who is the best fun of Barça?", answer: "albert punti" },
+    {
+      question: "Who did Real Madrid play against in their first ever official match?",
+      answer: "barcelona fc",
+    },
+    { question: "What was the score of Real Madrid's first official match?", answer: "3-1" },
+    { question: "How many professional football clubs are in Madrid?", answer: "3" },
+    { question: "Who is the biggest fan of Real Madrid?", answer: "prakriti tiwari" },
   ];
 
   const progressBar = document.getElementById("progressBar");

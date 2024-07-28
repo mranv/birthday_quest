@@ -1,12 +1,12 @@
 / since block dude and sokoban share similarities in look and play style
-// we'll reuse a lot of the code from the basic sokoban game
+// i'll reuse a lot of the code from the basic sokoban game
 // @see https://gist.github.com/straker/2fddb507d4bb6bec54ea2fdb022d020c
 const canvas = document.getElementById('game');
 const context = canvas.getContext('2d');
 
 const grid = 32;
 
-// create a new canvas and draw the wall image. then we can use this
+// create a new canvas and draw the wall image. then i can use this
 // canvas to draw the images later on
 const wallCanvas = document.createElement('canvas');
 const wallCtx = wallCanvas.getContext('2d');
@@ -28,13 +28,13 @@ wallCtx.fillRect(11, 12, 21, 9);
 wallCtx.fillRect(0, 22, 21, 10);
 wallCtx.fillRect(23, 22, 10, 10);
 
-// the direction to move the player each frame. we'll use change in
+// the direction to move the player each frame. i'll use change in
 // direction so "row: 1" means move down 1 row, "row: -1" means move
 // up one row, etc.
 let playerDir = { row: 0, col: 0 };
 let playerPos = { row: 0, col: 0 };  // player position in the 2d array
 let playerFacing = -1;  // the direction the player is facing (1 for right, -1 for left)
-let rAF = null;  // keep track of the animation frame so we can cancel it
+let rAF = null;  // keep track of the animation frame so i can cancel it
 let carryingBlock = false;  // if the player is carrying a block
 let width = 0;  // find the largest row and use that as the game width
 
